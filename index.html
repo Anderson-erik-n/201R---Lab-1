@@ -1,0 +1,113 @@
+<html>
+<head>
+ <title>Resume</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="resume.css"> 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+
+<div>
+        <label>What's your name?
+        <input id="name" type="text">
+        </label>
+        <br>
+        <label>What language do you speak?
+        <select id="lang">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+        </select>
+        </label>
+        <br>
+        <button id="button" type="button">Well...? Click here!</button>
+        <div id="message"></div>
+    </div>
+
+
+<script>
+  var button = document.getElementById("button");
+     
+  var onButtonClick = function() {
+    var name = document.getElementById("name").value;
+    var lang = document.getElementById("lang").value;
+    var greeting;
+    if (lang === "es") {
+        greeting = "Hola " + name+"!";
+    }
+    else {
+        greeting = "Good day " + name + "!";
+    }
+    document.getElementById("message").textContent += greeting;  
+  };
+  button.addEventListener("click", onButtonClick);
+  </script>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 id="main_header">Resume - Erik Anderson</h1>
+<p id="personal_details">
+Place and Date of Birth: Bakersfield California, 9/10/1993 <br> 
+Sex: Male<br>
+Address: <br>
+450 N 1080 E<br>
+Provo, UT, 84646<br>
+Marital Status: Single<br>
+Telephone Number : 801-850-8585<br>
+Email: Anderson.erik.n@gmail.com<br>
+</p>
+<h3>Summary</h3>    
+<p id="summary">
+<ul>
+<li>Supercharged neverending productivity</li>
+<li>Analytical thinking and critical judgement leads to the ability to create a multitude of creative solutions in multiple problems.</li>
+<li>Motto: There is <em>ALWAYS</em> a way!</li>
+</ul>
+</p> 
+<h3>Objectives:</h3>
+<p id="objectives">I have a longing for progress in every facet of my life; I always aim to be top. I have a similar desire for efficient results, while never cutting corners</p>
+<h3>Education:</h3>
+<p id="education"><ul>
+<li>Received all A*'s and A's in my GSCE's from England</li>
+<li>Successfully graduated from Yarm School of Secondary Education with a full set of A-levels from England.</li>
+<li>Currently attending Brigham Young University with a declared major of Computer Science AND Spanish. </li>
+</ul></p>
+<h3>Employment History:</h3>
+<p id="employment_history">
+<ol>
+<li>On-site technician for MBA Electric</li>
+<li>Sales representative for New Power Solar</li>
+</ol>
+</p>
+<h3>Hobbies & Interests</h3>
+<p id="hobbies">
+<ul>
+<li>Hardware design and manipulation, (eg. construction of pcs, upgrading hardware, troubleshooting problems)</li>
+<li><em>Almost any sport that exists in this world!</em></li>
+<li>Intense hiking, skiing, and all around adventures.</li>
+<li>Video creation and editing<a href="https://www.youtube.com/watch?v=vNyGY4zciIc"> For a taster, click here!!.</a></li>
+</ul>
+</p>
+
+<h3 class="header">Professional Skills and experience:</h3>
+<p id="professional_skills">
+<img src="http://www.aamu.edu/Academics/engineering-technology/EE/Documents/computerscience.jpg" style="width:250px">
+<li>Can program in c++, html, javascript, and css.</li>
+<li>Fluent Spanish Speaker</li>
+<li>Completed two years of full time voluntary service for the community of San Diego, helping both English speakers and Spanish speakers.</li>
+
+</p>
+<h3 class="header">Awards and Distinctions:</h3>
+<p id="awards">
+<li>Recipient of the esteemed engineering Arkwright Scholarship <a href="http://www.arkwright.org.uk"> For more info on the Arkwright Scholarship, click here. </a></li>
+<li>Recipient of Eagle Scout award at the age of 13 <a href="http://www.scouting.org/About/FactSheets/EagleScouts.aspx"> For more info on the Eagle Scout Award,click here.</a></li>
+<li>Captain of the back row of the 1st XV Rugby team of my school and national medalist of England in rowing</li> 
+<img class="displayed" src ="http://static.guim.co.uk/sys-images/Sport/Pix/pictures/2008/08/11/eight2.jpg" style="width:250px">
+
+</p>
+
+
+</body>
+</html>
